@@ -49,6 +49,12 @@ $second-color-text: rgb(214, 49, 49);
         }
 }
 
+@mixin my-header($header-color, $header-font, $header-where ){
+    color: $header-color;
+    font-size: $header-font;
+    text-align: $header-where;
+}
+
 @media only screen and (min-width: 1200px) {
     body {
         background-color: rgba(17, 17, 172, 0.589);
@@ -92,6 +98,12 @@ body{
         text-align: center;
         margin-left: 30%;
         margin-right: 30%;
+        p{
+            font-size: 15px;
+        }
+        h4{
+            @include my-header($second-color-text, 18px, center)
+        }
     }
     .paragraphe{
         p {
@@ -109,19 +121,13 @@ body{
             }
         }
         h1{
-            color: $second-color-text;
-            font-size: 40px;
-            text-align: center;
+            @include my-header($second-color-text, 40px, center)
         }
         h2{
-            color: $primary-color-text;
-            font-size: 30px;
-            text-align: center;
+            @include my-header($primary-color-text, 30px, center)
         }
         h3{
-            color: $primary-color-text;
-            font-size: 24px;
-            text-align: left;
+            @include my-header($primary-color-text, 24px, left)
         }
         &#introduction{
             @extend .paragraphe;
