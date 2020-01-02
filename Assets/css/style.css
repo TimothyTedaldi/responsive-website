@@ -1,0 +1,241 @@
+@import url(assets/css/normalize.css);
+@media only screen and (min-width: 1200px) {
+  /* line 53, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  body {
+    background-color: rgba(17, 17, 172, 0.589);
+  }
+  /* line 56, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  .small {
+    display: none;
+  }
+  /* line 59, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  .medium {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  /* line 64, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  body {
+    background-color: rgba(24, 124, 24, 0.753);
+  }
+  /* line 67, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  .large {
+    display: none;
+  }
+  /* line 70, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  .small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 75, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  body {
+    background-color: rgba(185, 17, 17, 0.815);
+  }
+  /* line 78, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  .large {
+    display: none;
+  }
+  /* line 81, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+  .medium {
+    display: none;
+  }
+}
+
+/* line 88, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body {
+  /* background-color: $primary-color-background; */
+}
+
+/* line 90, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .small, body .medium, body .large {
+  background-color: rgba(255, 255, 0, 0.658);
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/* line 97, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe p, body .paragraphe#introduction p, body .paragraphe#resaux-sociaux p, body .paragraphe#favorites-movies p {
+  text-align: left;
+  color: black;
+  margin-left: 7%;
+  margin-right: 7%;
+  letter-spacing: 1.8px;
+  line-height: 28px;
+}
+
+/* line 12, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe p font, body .paragraphe#introduction p font, body .paragraphe#resaux-sociaux p font, body .paragraphe#favorites-movies p font {
+  size: 5px;
+  family: 'Times New Roman', Times, serif;
+}
+
+/* line 101, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe a, body .paragraphe#introduction a, body .paragraphe#resaux-sociaux a, body .paragraphe#favorites-movies a, body #resaux-sociaux.paragraphe a:visited {
+  text-align: left;
+  color: black;
+  margin-left: 7%;
+  margin-right: 7%;
+  letter-spacing: 1.8px;
+  line-height: 28px;
+}
+
+/* line 12, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe a font, body .paragraphe#introduction a font, body .paragraphe#resaux-sociaux a font, body .paragraphe#favorites-movies a font, body #resaux-sociaux.paragraphe a:visited font {
+  size: 5px;
+  family: 'Times New Roman', Times, serif;
+}
+
+/* line 104, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe a:hover, body .paragraphe#introduction a:hover, body .paragraphe#resaux-sociaux a:hover, body .paragraphe#favorites-movies a:hover {
+  text-decoration: none;
+}
+
+/* line 107, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe a:visited, body .paragraphe#introduction a:visited, body .paragraphe#favorites-movies a:visited, body #resaux-sociaux.paragraphe a:visited {
+  text-decoration: none;
+}
+
+/* line 111, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe h1, body .paragraphe#introduction h1, body .paragraphe#resaux-sociaux h1, body .paragraphe#favorites-movies h1 {
+  color: #d63131;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* line 116, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe h2, body .paragraphe#introduction h2, body .paragraphe#resaux-sociaux h2, body .paragraphe#favorites-movies h2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 121, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe h3, body .paragraphe#introduction h3, body .paragraphe#resaux-sociaux h3, body .paragraphe#favorites-movies h3 {
+  color: black;
+  font-size: 24px;
+  text-align: left;
+}
+
+/* line 126, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe#introduction {
+  background-color: white;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  display: block;
+  border-radius: 12px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+/* line 130, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe#introduction button {
+  background-color: #d63131;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 40px 50px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* line 47, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe#introduction button:hover {
+  background-color: black;
+}
+
+/* line 134, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe#introduction img {
+  margin-top: 2%;
+  border-radius: 100%;
+  border: solid 8px grey;
+  width: 20%;
+}
+
+/* line 140, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe#introduction a, body .paragraphe#introduction #resaux-sociaux.paragraphe a:visited, body #resaux-sociaux.paragraphe .paragraphe#introduction a:visited {
+  color: white;
+}
+
+/* line 142, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body .paragraphe#introduction a:visited {
+  color: white;
+}
+
+/* line 147, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #resaux-sociaux.paragraphe {
+  background-color: white;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  display: block;
+  border-radius: 12px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+/* line 151, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #resaux-sociaux.paragraphe li {
+  display: inline;
+}
+
+/* line 154, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #resaux-sociaux.paragraphe a, body #resaux-sociaux.paragraphe a:visited {
+  text-decoration: none;
+}
+
+/* line 160, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #resaux-sociaux.paragraphe i {
+  font-size: 150%;
+  padding: 8%;
+  color: grey;
+}
+
+/* line 164, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #resaux-sociaux.paragraphe i:hover {
+  color: black;
+}
+
+/* line 169, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #favorites-movies.paragraphe {
+  background-color: white;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  display: block;
+  border-radius: 12px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* line 172, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #favorites-movies.paragraphe img {
+  margin: 0% 5% 3% 3%;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+}
+
+/* line 178, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #favorites-movies.paragraphe article {
+  padding-top: 3%;
+  padding-bottom: 10%;
+}
+
+/* line 182, ../Documents/GitHub/responsive-website/Assets/scss/style.scss */
+body #favorites-movies.paragraphe .je-suis-un-film {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

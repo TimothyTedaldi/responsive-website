@@ -1,0 +1,187 @@
+@import "assets/css/normalize.css";
+
+$primary-color-background: grey;
+$second-color-background: white;
+
+$primary-color-text: black;
+$second-color-text: rgb(214, 49, 49);
+
+@mixin text-deco ($size){
+    text-align: left;
+    color: $primary-color-text;
+    font{
+        size: $size;
+        family: 'Times New Roman', Times, serif;
+    }
+}
+
+@mixin text-spacing ($mymargin) {
+    margin-left: $mymargin;
+    margin-right: $mymargin;
+    letter-spacing: 1.8px;
+    line-height: 28px;
+}
+
+@mixin boite ($pad, $mywidth){
+    background-color: $second-color-background;
+    width: $mywidth;
+    margin-right: auto;
+    margin-left: auto   ;
+    margin-top: 2%;
+    display: block;
+    border-radius: 12px;
+    padding-top: $pad;
+    padding-bottom: $pad;
+}
+
+@mixin red-button($pad-height, $pad-size){
+        background-color: rgb(214, 49, 49);
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: $pad-height $pad-size;
+        border-radius: 12px;
+        border: none;
+        &:hover{
+            background-color: $primary-color-text;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: rgba(17, 17, 172, 0.589);
+    }
+    .small{
+        display: none;
+    }
+    .medium{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: rgba(24, 124, 24, 0.753);
+    }
+    .large{
+        display: none;
+    }
+    .small{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgba(185, 17, 17, 0.815);
+    }
+    .large{
+        display: none;
+    }
+    .medium{
+        display: none;
+    }
+}
+
+
+
+body{
+    /* background-color: $primary-color-background; */
+    .small, .medium, .large{
+        background-color: rgba(255, 255, 0, 0.658);
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .paragraphe{
+        p {
+            @include text-deco(5px);
+            @include text-spacing(7%);
+        }
+        a{
+            @include text-deco(5px);
+            @include text-spacing(7%);
+            &:hover{
+                text-decoration: none;
+            }
+            &:visited{
+                text-decoration: none;
+            }
+        }
+        h1{
+            color: $second-color-text;
+            font-size: 40px;
+            text-align: center;
+        }
+        h2{
+            color: $primary-color-text;
+            font-size: 30px;
+            text-align: center;
+        }
+        h3{
+            color: $primary-color-text;
+            font-size: 24px;
+            text-align: left;
+        }
+        &#introduction{
+            @extend .paragraphe;
+            @include boite(5%, 50%);
+            text-align: center;
+            button{
+                
+                @include red-button(40px, 50px);
+            }
+            img{
+                margin-top: 2%;
+                border-radius: 100%;
+                border: solid 8px grey;
+                width: 20%;
+            }
+            a{
+                color: $second-color-background;
+                &:visited{
+                    color: $second-color-background;
+                }
+            }
+        }
+        &#resaux-sociaux{
+            @extend .paragraphe;
+            @include boite(5%, 50%);
+            text-align: center;
+            li{
+                display: inline;
+            }
+            a{
+                text-decoration: none;
+                &:visited{
+                    @extend a;
+                }
+            }
+            i{
+                font-size: 150%;
+                padding: 8%;
+                color: grey;
+                &:hover{
+                    color:$primary-color-text
+                }
+            }
+        }
+        &#favorites-movies{
+            @extend .paragraphe;
+            @include boite(5%, 50%);
+            img{
+                margin: 0% 5% 3% 3%;
+                margin-top: auto;
+                margin-bottom: auto;
+                float: left;
+            }
+            article {
+                padding-top: 3%;
+                padding-bottom: 10%;
+            }
+            .je-suis-un-film{
+                display: inline-block;
+            }
+        }
+    }
+}
